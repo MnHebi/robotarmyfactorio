@@ -45,7 +45,7 @@ for i, force in pairs(game.forces) do
     if force.technologies["military-3"].researched then
         force.recipes["terminator"].enabled=true
     end
-    if force.technologies["repair-tech"].researched then
+    if force.technologies["steel-processing"].researched then
         force.recipes["basic-constructor"].enabled=true
         force.recipes["construction-warehouse"].enabled=true
     end
