@@ -399,7 +399,7 @@ function checkSpawn(assembler, squadHuntSize)
                     {name = spawnableDroidName,
                      position = droidPos,
                      direction = defines.direction.east,
-                     force = assembler.force 
+                     force = assembler.force, 
 		     raise_built = true })
 
                 if returnedEntity then
@@ -471,7 +471,7 @@ function processDroidGuardStations(force)
                             {name = spawnableDroidName,
                                 position = droidPos,
                                 direction = defines.direction.east,
-                                force = station.force 
+                                force = station.force, 
 				raise_built = true })
                         if returnedEntity then
                             inv.remove({name=returnedEntity.name, count=1}) --clear output slot
