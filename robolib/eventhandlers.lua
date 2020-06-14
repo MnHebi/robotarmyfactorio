@@ -399,7 +399,8 @@ function checkSpawn(assembler, squadHuntSize)
                     {name = spawnableDroidName,
                      position = droidPos,
                      direction = defines.direction.east,
-                     force = assembler.force })
+                     force = assembler.force 
+		     raise_built = true})
 
                 if returnedEntity then
 
@@ -414,11 +415,6 @@ function checkSpawn(assembler, squadHuntSize)
                      --put the assembler's reference in table key'd by the unit's unique number. allows us to work backwards and find the assembler the unit belongs to, and get the the whole squad.
                     global.assemblerAssignment[returnedEntity.unit_number] = assembler 
 
-                    if not game.active_mods["Unit_Control"] then
-                        --processSpawnedDroid(returnedEntity)
-                    else
-                        script.raise_event(defines.events.on_entity_spawned, {entity = returnedEntity, spawner = assembler})
-                    end
                 end
                 
             end
@@ -475,18 +471,13 @@ function processDroidGuardStations(force)
                             {name = spawnableDroidName,
                                 position = droidPos,
                                 direction = defines.direction.east,
-                                force = station.force })
+                                force = station.force 
+				raise_built = true})
                         if returnedEntity then
                             inv.remove({name=returnedEntity.name, count=1}) --clear output slot
 
                             table.insert(global.guardSquadMembers[station.unit_number], returnedEntity)
                             
-                            
-                            if not game.active_mods["Unit_Control"] then
-                                processSpawnedDroid(returnedEntity, true, station.position)    
-                            else
-                                script.raise_event(defines.events.on_entity_spawned, {entity = returnedEntity, spawner = station})
-                            end
                         end 
                     end
                 end
