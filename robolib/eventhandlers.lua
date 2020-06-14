@@ -400,7 +400,7 @@ function checkSpawn(assembler, squadHuntSize)
                      position = droidPos,
                      direction = defines.direction.east,
                      force = assembler.force 
-		     raise_built = true})
+		     raise_built = true })
 
                 if returnedEntity then
 
@@ -472,7 +472,7 @@ function processDroidGuardStations(force)
                                 position = droidPos,
                                 direction = defines.direction.east,
                                 force = station.force 
-				raise_built = true})
+				raise_built = true })
                         if returnedEntity then
                             inv.remove({name=returnedEntity.name, count=1}) --clear output slot
 
