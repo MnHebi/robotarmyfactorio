@@ -3,7 +3,7 @@ data:extend({
 	{
         type = "double-setting",
         name = "robotarmy-healthscalar",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 0.1,
         maximum_value = 10.0,
         default_value = 1.0,
@@ -12,7 +12,7 @@ data:extend({
 	{
         type = "double-setting",
         name = "robotarmy-damagescalar",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 0.1,
         maximum_value = 10.0,
         default_value = 1.0,
@@ -21,7 +21,7 @@ data:extend({
 	{
         type = "int-setting",
         name = "robotarmy-tickupdate",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 60,
@@ -30,7 +30,7 @@ data:extend({
 	{
         type = "int-setting",
         name = "robotarmy-assemblertickrate",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 120,
@@ -39,7 +39,7 @@ data:extend({
 	{
         type = "int-setting",
         name = "robotarmy-constructortickrate",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 60,
@@ -48,7 +48,7 @@ data:extend({
 	{
         type = "int-setting",
         name = "robotarmy-grabartifacts",
-        setting_type = "runtime-global",
+        setting_type = "startup",
         minimum_value = 0,
         maximum_value = 1,
         default_value = 0,
