@@ -7,16 +7,16 @@ data:extend({
         minimum_value = 0.1,
         maximum_value = 10.0,
         default_value = 1.0,
-		    order = "aa"
+	order = "aa"
     },
 	{
-        type = "int-setting",
+        type = "double-setting",
         name = "robotarmy-damagescalar",
         setting_type = "runtime-global",
         minimum_value = 0.1,
         maximum_value = 10.0,
         default_value = 1.0,
-		    order = "ab"
+	order = "ab"
     },
 	{
         type = "int-setting",
@@ -25,7 +25,7 @@ data:extend({
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 60,
-		    order = "ac"
+	order = "ac"
     },
 	{
         type = "int-setting",
@@ -34,7 +34,7 @@ data:extend({
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 120,
-		    order = "ad"
+	order = "ad"
     },
 	{
         type = "int-setting",
@@ -43,7 +43,7 @@ data:extend({
         minimum_value = 1,
         maximum_value = 1000,
         default_value = 60,
-		    order = "ae"
+	order = "ae"
     },
 	{
         type = "int-setting",
@@ -52,6 +52,6 @@ data:extend({
         minimum_value = 0,
         maximum_value = 1,
         default_value = 0,
-		    order = "af"
+	order = "af"
     },
 })
